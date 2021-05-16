@@ -20,6 +20,7 @@ app.use(cors());
 
 // Route configuration
 app.use("/posts", postRoutes);
+app.use("/user", userRoutes);
 
 // Greeting
 app.get("/", (req, res) => {
