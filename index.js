@@ -6,6 +6,7 @@ import dotenv from "dotenv";
 
 // Relative imports
 import postRoutes from "./routes/posts.js";
+import userRoutes from "./routes/user.js";
 
 // Set up middleware
 const app = express();

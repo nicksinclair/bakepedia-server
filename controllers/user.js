@@ -5,7 +5,9 @@ import jwt from "jsonwebtoken";
 // Relative imports
 import User from "../models/user.js";
 
-export const signin = async (req, res) => {
+// Sign In
+// TODO: Add JSDoc
+export const signIn = async (req, res) => {
   const { email, password } = req.body;
 
   try {
@@ -41,7 +43,9 @@ export const signin = async (req, res) => {
   }
 };
 
-export const signup = async (req, res) => {
+// Sign Up
+// TODO: Add JSDoc
+export const signUp = async (req, res) => {
   const { email, password, confirmPassword, firstName, lastName } = req.body;
 
   try {
