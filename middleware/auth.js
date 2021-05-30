@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 // Authentication middleware to be used in routes
 const auth = async (req, res, next) => {
   try {
-    const token = req.headers.Authorization.split(" ")[1];
+    const token = req.headers.authorization.split(" ")[1];
 
     // Token from custom auth implementation will be less than 500 characters
     // Google OAuth token will be more than 500 characters

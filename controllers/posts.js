@@ -23,7 +23,7 @@ export const createPost = async (req, res) => {
 
   const newPost = new PostMessage({
     ...post,
-    author: req.userId,
+    authorId: req.userId,
     createdAt: new Date().toISOString(),
   });
 
